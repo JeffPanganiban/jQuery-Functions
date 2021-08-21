@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="logo" id="logo">
+        </div>
+        <div class="body">
+            <div class="nav">
+                <a href="">Documentation</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Plugins</a>
+            </div>
+            <!-- click demo -->
+            <div class="demo">
+                <h1>.click()</h1>
+                <h2><span class="bold">Description:</span> <span class="italic">Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</span></h2>
+                <div class="example">
+                    <h3><u>Example:</u></h3>
+                    <button class="click">CLICK ME</button>
+                </div>
+            </div>
+            <!-- hide demo -->
+            <div class="demo">
+                <h1>.hide()</h1>
+                <h2><span class="bold">Description:</span> <span class="italic">Hide the matched elements.</span></h2>
+                <div class="example">
+                    <h3><u>Example:</u></h3>
+                    <button class="hide">HIDE</button>
+                    <div class="hidden">
+                        <p>One day Michael came in, complaining about a speed bump, on the highway... I wonder who he ran over then.</p>
+                        <p>Wow that is really hard. You really think you can go all day long? Well, you always left me satisfied and smiling.</p>
+                        <p>We had a foreign exchange student when I was young. And, we called him my brother, and that's what I thought he was. Um, then he went home to what is formerly Yugoslavia, taking all of my blue jeans, with him. And I had to spend the entire winter in shorts. That is what Ryan is like: A fake brother who steals your jeans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    //click() demo
+    $('button.click').click(function(){
+        alert("You clicked a button!");
+    });
+
+    //hide() demo
+    $('button.hide').click(function(){
+        $('.hidden').hide();
+    });
+</script> 
+</body>
+</html>
